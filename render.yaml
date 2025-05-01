@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: n8n
+    env: node
+    buildCommand: pnpm install --frozen-lockfile && pnpm run build
+    startCommand: pnpm run start
+    nodeVersion: 18.19.0
